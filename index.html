@@ -8,29 +8,63 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    
+    <style>
+        .btn-purple {
+            background-color: purple;
+            color: white;
+        }
+    
+        .btn-purple:hover {
+            background-color: rgb(95, 0, 95);
+            color: white;
+        }
+    
+        .btn-outline-purple {
+            border: 1px solid purple;
+            color: purple;
+        }
+    
+        .btn-outline-purple:hover {
+            background-color: purple;
+            color: white;
+        }
+    
+        .text-purple {
+            color: purple;
+        }
+    
+        .bg-purple {
+            background-color: purple;
+            color: white;
+        }
+    </style>
+
     <title>Mutiara Galeri</title>
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-purple shadow fixed-top">
         <div class="container-fluid d-flex ">
-          <a class="navbar-brand text-primary fw-bold" href="#">Mutiara Galeri</a>
+        <a class="navbar-brand text-purple fw-bold" href="#">Mutiara Galeri</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#beranda">Beranda</a>
+                <a class="nav-link text-purple" aria-current="page" href="#beranda">Beranda</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#tentang">Tentang</a>
+                <a class="nav-link text-purple" href="#tentang">Tentang</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#galeri">Galeri</a>
+                <a class="nav-link text-purple" href="#galeri">Galeri</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#kontak">Kontak</a>
+                <a class="nav-link text-purple" href="#kontak">Kontak</a>
               </li>
               <!-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -52,15 +86,19 @@
       <section id="beranda">
         <div  class="container text-center mt-5">
           <img src="ruslansamuel.jpg" alt="Mutiara Galeri" class="rounded-circle img-thumbnail shadow mt-5">
-          <h1 class="display-4 fw-bold text-primary">Mutiara Galeri</h1>
+        <h1 class="display-4 fw-bold text-purple">Mutiara Galeri</h1>
           <p class="lead">Galeri & Digital Printing</p>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0d6efd" fill-opacity="1" d="M0,64L30,85.3C60,107,120,149,180,181.3C240,213,300,235,360,202.7C420,171,480,85,540,90.7C600,96,660,192,720,208C780,224,840,160,900,133.3C960,107,1020,117,1080,128C1140,139,1200,149,1260,138.7C1320,128,1380,96,1410,80L1440,64L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#800080" fill-opacity="1"
+                d="M0,128L48,133.3C96,139,192,149,288,154.7C384,160,480,160,576,144C672,128,768,96,864,122.7C960,149,1056,235,1152,234.7C1248,235,1344,149,1392,106.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
       </section>
       <!-- Akhir Jumbotron -->
   
       <!-- Tentang -->
-      <section id="tentang" class="bg-primary text-white">
+    <section id="tentang" class="bg-purple text-white">
         <div  class="container">
           <h1 class="display-5 text-center mb-4 fw-bold">Tentang</h1>
           <div class="row justify-content-center">
@@ -75,7 +113,7 @@
       <!-- Galeri -->
     <section id="galeri">
         <div  class="container">
-          <h1 class="display-5 text-center mb-4 fw-bold text-primary">Galeri</h1>
+        <h1 class="display-5 text-center mb-4 fw-bold text-purple">Galeri</h1>
           <div class="row justify-content-center">
             <div class="col-md-4">
               <div class="card shadow mb-3" data-bs-toggle="modal" data-bs-target="#project1">
@@ -139,11 +177,15 @@
             </div>
           </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0d6efd" fill-opacity="1" d="M0,224L30,202.7C60,181,120,139,180,149.3C240,160,300,224,360,240C420,256,480,224,540,208C600,192,660,192,720,202.7C780,213,840,235,900,229.3C960,224,1020,192,1080,192C1140,192,1200,224,1260,245.3C1320,267,1380,277,1410,282.7L1440,288L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#800080" fill-opacity="1"
+                d="M0,160L48,160C96,160,192,160,288,181.3C384,203,480,245,576,256C672,267,768,245,864,240C960,235,1056,245,1152,240C1248,235,1344,213,1392,202.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
       </section>
   
       <!-- Kontak -->
-      <section id="kontak" class="bg-primary text-white">
+    <section id="kontak" class="bg-purple text-white">
         <div  class="container">
           <h1 class="display-5 text-center mb-4 fw-bold">Kontak</h1>
           <div class="row justify-content-center">
@@ -183,7 +225,16 @@
   
       <!-- Footer -->
       <footer class="text-center mb-5">
-        Copyright &copy; 2021 <a href="" style="text-decoration: none;" class="fw-bold text-primary">Mutiara Galeri</a>
+        <div class="btn-group mb-3" role="group" aria-label="Basic outlined example">
+            <a href="http://www.facebook.com/mutiara-galeri" class="btn btn-sm btn-outline-primary shadow" target="_blank"><i
+                    class="bi bi-facebook"></i> Mutiara Galeri</a>
+            <a href="http://www.plus.google.com/mutiara-galeri" class="btn btn-sm btn-outline-danger shadow" target="_blank"><i
+                    class="bi bi-google"></i> Mutiara Galeri</a>
+            <a href="http://www.instagram.com/mutiara-galeri" class="btn btn-sm btn-outline-purple shadow" target="_blank"><i
+                    class="bi bi-instagram"></i> Mutiara Galeri</a>
+        </div>
+        <div>Copyright &copy; 2021 <a href="" style="text-decoration: none;" class="fw-bold text-purple">Mutiara Galeri</a>
+        </div>
       </footer>
       <!-- Akhir Footer -->
 
