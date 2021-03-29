@@ -147,7 +147,8 @@
         <div  class="container">
           <h1 class="display-5 text-center mb-4 fw-bold">Kontak</h1>
           <div class="row justify-content-center">
-            <div class="col-md-8">
+            <div class="col-md-6">
+                <p class="text-center">Masukkan pertanyaan atau kritik dan saran anda pada form dibawah ini!</p>
               <form>
                 <div class="mb-3">
                   <label for="nama" class="form-label">Nama Lengkap</label>
@@ -163,13 +164,15 @@
                 </div>
                 <div class="mb-3">
                   <label for="pesan" class="form-label">Pesan</label>
-                  <textarea class="form-control shadow" id="pesan" placeholder="Masukkan pesan Anda..." required></textarea>
+                <textarea class="form-control shadow" rows="5" id="pesan" placeholder="Masukkan pesan Anda..." required></textarea>
                 </div>
-                <button type="submit" class="btn btn-dark shadow">Kirim</button>
-                <button class="btn btn-dark shadow d-none" type="button" disabled>
-                  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                  Mengirim...
-                </button>
+                <div class="d-grid">
+                    <button type="button" class="btn btn-dark shadow" id="btnKirim">Kirim</button>
+                    <button class="btn btn-dark shadow d-none" id="btnLoading" type="button" disabled>
+                      <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                      Mengirim...
+                    </button>
+                </div>
               </form>
             </div>
           </div>
